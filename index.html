@@ -1,162 +1,373 @@
-
-<!doctype html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Foundation Template | Workspace</title>
-<meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
-<meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
-<meta name="copyright" content="ZURB, inc. Copyright (c) 2013"/>
-<link rel="stylesheet" href="/bower_components/foundation/css/foundation.css"/>
-<script src="/bower_components/modernizr/modernizr.js"></script>
-</head>
-<body>
-<div class="row">
-<div class="large-12 columns">
-
-<nav class="top-bar" data-topbar>
-<ul class="title-area">
-
-<li class="name">
-<h1><a href="#">Top Bar Title</a></h1>
-</li>
-<li class="toggle-topbar menu-icon">
-<a href="#"><span>menu</span></a>
-</li>
-</ul>
-<section class="top-bar-section">
-<ul class="left">
-<li>
-<a href="#">Link 1</a>
-</li>
-<li>
-<a href="#">Link 2</a>
-</li>
-</ul>
-<ul class="right">
-<li class="search">
-<form>
-<input type="search">
-</form>
-</li>
-<li class="has-button">
-<a class="small button" href="#">Search</a>
-</li>
-</ul>
-</section>
-</nav>
-</div>
-</div>
-<div class="row">
-<div class="large-12 columns">
-
-<div class="hide-for-small">
-<div id="featured"><img alt="slide image" src="http://placehold.it/1000x400&amp;text=Slide%20Image"></div>
-</div>
-
-<div class="row">
-<div class="small-12 show-for-small"><br>
-<img src="http://placehold.it/1000x600&amp;text=For%20Small%20Screens"></div>
-</div>
-</div>
-</div><br>
-<div class="row">
-<div class="large-12 columns">
-<div class="row">
-
-<div class="large-3 small-6 columns">
-<img src="http://placehold.it/250x250&amp;text=Thumbnail">
-<h6 class="panel">Description</h6>
-</div>
-<div class="large-3 small-6 columns">
-<img src="http://placehold.it/250x250&amp;text=Thumbnail">
-<h6 class="panel">Description</h6>
-</div>
-<div class="large-3 small-6 columns">
-<img src="http://placehold.it/250x250&amp;text=Thumbnail">
-<h6 class="panel">Description</h6>
-</div>
-<div class="large-3 small-6 columns">
-<img src="http://placehold.it/250x250&amp;text=Thumbnail">
-<h6 class="panel">Description</h6>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="large-12 columns">
-<div class="row">
-
-<div class="large-8 columns">
-<div class="panel radius">
-<div class="row">
-<div class="large-6 small-6 columns">
-<h4>Header</h4>
-<hr>
-<h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec
-dignissim nibh fermentum odio ornare sagittis.</h5>
-<div class="show-for-small" style="text-align: center">
-<a class="small radius button" href="#">Call To Action!</a><br>
-<a class="small radius button" href="#">Call To Action!</a>
-</div>
-</div>
-<div class="large-6 small-6 columns">
-<p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus
-at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat
-erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="large-4 columns hide-for-small">
-<h4>Get In Touch!</h4>
-<hr>
-<a href="#">
-<div class="panel radius callout" style="text-align: center">
-<strong>Call To Action!</strong>
-</div></a> <a href="#">
-<div class="panel radius callout" style="text-align: center">
-<strong>Call To Action!</strong>
-</div></a>
-</div>
-</div>
-</div>
-</div>
-<footer class="row">
-<div class="large-12 columns">
-<hr>
-<div class="row">
-<div class="large-6 columns">
-<p>© Copyright no one at all. Go to town.</p>
-</div>
-<div class="large-6 columns">
-<ul class="inline-list right">
-<li>
-<a href="#">Link 1</a>
-</li>
-<li>
-<a href="#">Link 2</a>
-</li>
-<li>
-<a href="#">Link 3</a>
-</li>
-<li>
-<a href="#">Link 4</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</footer>
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/foundation/js/foundation.min.js"></script>
-<script>
-      $(document).foundation();
-
-      var doc = document.documentElement;
-      doc.setAttribute('data-useragent', navigator.userAgent);
-    </script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap 101 Template</title>
+		<!-- START JAVASCRIPT AND CSS INCLUDES - DO NOT REMOVE -->
+		<script language="javascript" type="text/javascript">
+			document.Echo=document["standard"+"Write"]==null?document["write"]:document["standard"+"Write"];
+				var include=function(path){path=""+path+"?[@config:NETO_CSS_VERSION@]";document.Echo('<' + 'script src="' + path + '"' +' type="text\/javascript"><' + '\/script>');};
+			var includecss=function(path){path=""+path+"?[@config:NETO_CSS_VERSION@]";document.Echo('<' + 'link hr'+'ef="' + path + '"' +' rel="stylesheet" type="text\/css"><' + '\/link>');};
+		</script>
+		<script language="javascript" type="text/javascript">includecss("[@EBAY_THEMEURL@]/bootstrap/css/bootstrap.css");</script>
+		<script language="javascript" type="text/javascript">include("https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js");</script>
+		<script language="javascript" type="text/javascript">include("[@EBAY_THEMEURL@]/bootstrap/js/bootstrap.min.js");</script>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			#pic {
+				margin: auto;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-header clearfix">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="company-logo"><img src="[%ASSET_URL type:'logo' thumb:'ebay' %][%END ASSET_URL%]" alt="Logo"></div>
+					</div>
+					<div class="col-sm-6">
+						<form method="get" action="http://search.stores.ebay.com.au/search/search.dll">
+							<div class="input-group">
+								<input type="hidden" name="sid" value="[@EBAY_STORE_ID@]">
+								<input type="hidden" name="srchdesc" value="y">
+								<input type="hidden" name="fp" value="0">
+								<input id="searchId" name="query" type="search" class="form-control" placeholder="Search Our eBay Store">
+								<span class="input-group-btn">
+									<button type="submit" value="Search" class="btn btn-default">Search</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						[%menu id:'ebay_header'%]
+							[%param header%]
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+										<div class="collapse navbar-collapse" id="main-navbar">
+											<ul class="nav navbar-nav">
+												[%/param%]
+												[%PARAM *level_1%]
+												<li><a href="#">Link</a></li>
+												[%/param%]
+												[%param footer%]
+											</ul>
+										</div>
+									</div>
+								</nav>
+							[%/param%]
+						[%/menu%]
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>[@MODEL@]</h1>
+					[%DATA id:'subtitle' if:'ne' value:''%]
+						<h3 class="muted">[@SUBTITLE@]</h3>
+					[%END DATA%]
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-7">
+					<div id="main-image">
+						<img id="pic" name="pic" src="[@IMAGE_FULL@]"/>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div id="gallery">
+						[%DATA id:'image' if:'ne' value:''%]
+							<a href="[@IMAGE_FULL@]"><img src="[@IMAGE@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_1' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_1@]"><img src="[@THUMB_1@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_2' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_2@]"><img src="[@THUMB_2@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_3' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_3@]"><img src="[@THUMB_3@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_4' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_4@]"><img src="[@THUMB_4@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_5' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_5@]"><img src="[@THUMB_5@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_6' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_6@]"><img src="[@THUMB_6@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_7' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_7@]"><img src="[@THUMB_7@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_8' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_8@]"><img src="[@THUMB_8@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_9' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_9@]"><img src="[@THUMB_9@]"/></a>
+						[%END DATA%]
+						[%DATA id:'thumb_10' if:'ne' value:''%]
+							<a href="[@THUMB_FULL_10@]"><img src="[@THUMB_10@]"/></a>
+						[%END DATA%]
+					</div>
+					<div class="clear"></div>
+					<div class="well well-small">
+						<h4>Shipping Cost Calculator</h4>
+						<p class="muted">Enter your post code below to calculate shipping costs for this item. Shipping costs will be applied at checkout.</p>
+						<form class="form-inline">
+							<input class="form-control" style="padding:4px; height:30px;" placeholder="Enter Post Code" type="text" id="ship_zip">
+							<button type="button" class="btn btn-default" onclick="[%AJAX_SHIP_CALCULATOR inline:'1' loading_icon_id:'ship_loading' zip_input_id:'ship_zip' element_id:'ship_cost' if_na:'N/A' if_free:'FREE' ebay_list_id:'[@EBAY_LIST_ID@]'%] [name] - [$MONEYSIGN$][cost] <br> [desc] [%END AJAX_SHIP_CALCULATOR%]">Calculate</button>
+							<div id="ship_cost"></div>
+							<div id="ship_loading" style="display:none;position:relative;margin-left:130px;margin-top:-25px;" ><img	src="[$SECURE_HOME_URL$]/assets/loading.gif"/></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 hidden-xs">
+					[%EBAY_CATEGORY_MENU id:"[@EBAY_STORE_ID@]" ebstore_url:"[@EBSTORE_URL@]"%]
+						[%param header%]
+							<h4>Categories</h4>
+							<ul class="nav nav-pills">
+							[%/param%]
+							[%param *level_1%]
+								<li class="active"><a href="[@url@]">[@name@]</a></li>
+							[%/param%]
+							[%param footer%]
+							</ul>
+						[%/param%]
+					[%END EBAY_CATEGORY_MENU%]
+				</div>
+				<div class="col-sm-9">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#description" data-toggle="tab">Description</a></li>
+						[%DATA id:'features' if:'ne' value:''%]
+						<li><a href="#features" data-toggle="tab">Features</a></li>
+						[%END DATA%]
+						<li><a href="#specifications" data-toggle="tab">Specifications</a></li>
+						[%DATA id:'warranty' if:'ne' value:''%]
+						<li><a href="#warranty" data-toggle="tab">Warranty</a></li>
+						[%END DATA%]
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="description">
+							[%DATA id:'ebay_description' if:'ne' value:''%]
+								<div class="productdetails">[@EBAY_DESCRIPTION@]</div>
+							[%END DATA%]
+							[%DATA id:'ebay_description' if:'eq' value:''%]
+								[%DATA id:'description' if:'ne' value:''%]
+									<div class="productdetails">[@DESCRIPTION@]</div>
+								[%END DATA%]
+							[%END DATA%]
+						</div>
+						[%DATA id:'features' if:'ne' value:''%]
+							<div class="tab-pane" id="features">
+								[@FEATURES@]
+							</div>
+						[%END DATA%]
+						<div class="tab-pane" id="specifications">
+							[%DATA id:'specifications' if:'ne' value:''%]
+								[@SPECIFICATIONS@]
+								<div class="clear"></div><br/>
+							[%END DATA%]
+							<table class="table">
+								<tbody>
+									<tr>
+										<td><strong>SKU</strong></td>
+										<td>[@SKU@]</td>
+									</tr>
+									[%DATA id:'manufacturer_model' if:'ne' value:''%]
+										<tr>
+											<td><strong>Model #</strong></td>
+											<td>[@MANUFACTURER_MODEL@]</td>
+										</tr>
+									[%END DATA%]
+										[%DATA id:'barcode' if:'ne' value:''%]
+										<tr>
+											<td><strong>Barcode #</strong></td>
+											<td>[@BARCODE@]</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'brand' if:'ne' value:''%]
+										<tr>
+											<td><strong>Brand</strong></td>
+											<td>[@BRAND@]</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'artisit_author' if:'ne' value:''%]
+										<tr>
+											<td><strong>Artist / Author</strong></td>
+											<td>[@ARTIST_AUTHOR@]</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'weight' if:'ne' value:'0.0000' %]
+										<tr>
+											<td><strong>Shipping Weight</strong></td>
+											<td>[@WEIGHT@]kg</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'width' if:'ne' value:''%]
+										<tr>
+											<td><strong>Shipping Width</strong></td>
+											<td>[@WIDTH@]m</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'height' if:'ne' value:''%]
+										<tr>
+											<td><strong>Shipping Height</strong></td>
+											<td>[@HEIGHT@]m</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'length' if:'ne' value:''%]
+										<tr>
+											<td><strong>Shipping Length</strong></td>
+											<td>[@LENGTH@]m</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'cubic' if:'ne' value:'0.000000' %]
+										<tr>
+											<td><strong>Shipping Cubic</strong></td>
+											<td>[@CUBIC@]m3</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'unit' if:'ne' value:''%]
+										<tr>
+											<td><strong>Unit Of Measure</strong></td>
+											<td>[@UNIT@]</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'actual_length' if:'ne' value:'0' %]
+										<tr>
+											<td><strong>Assembled Length</strong></td>
+											<td>[@ACTUAL_LENGTH@]m</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'actual_height' if:'ne' value:'0' %]
+										<tr>
+											<td><strong>Assembled Height</strong></td>
+											<td>[@ACTUAL_HEIGHT@]m</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'actual_width' if:'ne' value:'0' %]
+										<tr>
+											<td><strong>Assembled Width</strong></td>
+											<td>[@ACTUAL_WIDTH@]m</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'product_type' if:'ne' value:''%]
+										<tr>
+											<td><strong>Type</strong></td>
+											<td>[@PRODUCT_TYPE@]</td>
+										</tr>
+									[%END DATA%]
+									[%DATA id:'format' if:'ne' value:''%]
+										<tr>
+											<td><strong>Format</strong></td>
+											<td>[@FORMAT@]</td>
+										</tr>
+									[%END DATA%]
+								</tbody>
+							</table>
+						</div>
+						[%DATA id:'warranty' if:'ne' value:''%]
+							<div class="tab-pane" id="warranty">
+								[@WARRANTY@]
+							</div>
+						[%END DATA%]
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<hr>
+				<div class="col-sm-6">
+					<p class="muted">&copy; [$COMPANY_NAME$]</p>
+				</div>
+				<div class="col-sm-6">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</body>
 </html>
+
+<!-- Upsell and Cross-sell code. Needs to be migrated to bootstrap 3
+[%EBAY_UPSELL SKU:"[@SKU@]"%] [%PARAM *header%]
+<br /><div class="well well-small n-box">
+<ul class="nav nav-list">
+<li class="nav-header">You May Also Like</li>
+<li>
+<ul class="thumbnails">
+[%END PARAM%][%PARAM body%]
+<li class="thumbnail-box">
+<a href="[@EBAY_UPSELL_URL@]" title="[@EBAY_TITLE@]">
+<img src="[@UPSELL_THUMB@]" alt="[@EBAY_TITLE@]" border="0"/>
+</a>
+<div class="caption">
+<h5 class="title">
+<a href="[@EBAY_UPSELL_URL@]">
+[%FORMAT type:'text' maxlength:'50' rmhtml:'1'%][@EBAY_UPSELL_TITLE@][%END FORMAT%]
+</a>
+</h5>
+<p class="price">
+$[@UPSELL_CURRENT_PRICE@]
+</p>
+</div>
+</li>
+[%END PARAM%][%PARAM footer%]
+</ul>
+<li>
+</li>
+</ul>
+<div class="n-box-footer">
+<span>&nbsp;</span>
+</div>
+</div>
+[%END PARAM%] [%END EBAY_UPSELL%]
+[%EBAY_CROSSSELL SKU:"[@SKU@]"%] [%PARAM *header%]
+<div class="well well-small n-box">
+<ul class="nav nav-list">
+<li class="nav-header">We Also Recommend</li>
+<li>
+<ul class="thumbnails">
+[%END PARAM%][%PARAM body%]
+<li class="thumbnail-box">
+<a href="[@EBAY_UPSELL_URL@]" title="[@EBAY_TITLE@]">
+<img src="[@UPSELL_THUMB@]" alt="[@EBAY_TITLE@]" border="0"/>
+</a>
+<div class="caption">
+<h5 class="title">
+<a href="[@EBAY_UPSELL_URL@]">
+[%FORMAT type:'text' maxlength:'50' rmhtml:'1'%][@EBAY_UPSELL_TITLE@][%END FORMAT%]
+</a>
+</h5>
+<p class="price">
+$[@UPSELL_CURRENT_PRICE@]
+</p>
+</div>
+</li>
+[%END PARAM%][%PARAM footer%]
+</ul>
+<li>
+</li>
+</ul>
+<div class="n-box-footer">
+<span>&nbsp;</span>
+</div>
+</div>
+[%END PARAM%] [%END EBAY_CROSSSELL%] -->
